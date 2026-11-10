@@ -3,240 +3,282 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Bela Clean House | Limpeza Residencial, Comercial e Imóveis de Temporada</title>
+<title>Bela Clean House | Limpeza residencial, comercial e de temporada em Campo Grande</title>
+<meta name="description" content="Limpeza residencial, comercial e para imóveis de temporada em Campo Grande – MS. Equipe treinada, método com checklist e orçamento sob medida pelo WhatsApp.">
+<meta name="theme-color" content="#FAF6EC">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Bela Clean House | Sua casa em ordem, seu tempo de volta">
+<meta property="og:description" content="Limpeza com cuidado, discrição e padrão em Campo Grande – MS. Peça seu orçamento pelo WhatsApp.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232F4A2B'/%3E%3Cpath d='M14 50C16 28 30 14 50 14 50 34 36 48 14 50Z' fill='%23DDE9CC'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"HouseCleaningService","name":"Bela Clean House","telephone":"+55 67 99242-1003","email":"belacleanhouse@gmail.com","areaServed":{"@type":"City","name":"Campo Grande"},"address":{"@type":"PostalAddress","addressLocality":"Campo Grande","addressRegion":"MS","addressCountry":"BR"},"openingHours":"Mo-Fr 08:00-18:00","sameAs":["https://www.instagram.com/belacleanhouse"]}
+</script>
 <style>
 :root{
-  --bg:#FAF6EC; --bg2:#F1EBDA; --card:#FFFDF7; --card2:#DDE9CC; --line:#DCD5BF;
-  --txt:#2F4A2B; --mut:#6B7A62; --leaf:#4F7A3F; --leaf-dk:#2F4A2B; --leaf-lt:#DDE9CC;
+  --bg:#FAF6EC; --bg2:#F1EBDA; --card:#FFFDF7; --line:#DCD5BF;
+  --txt:#2F4A2B; --mut:#53634B; --leaf:#4F7A3F; --leaf-dk:#2F4A2B; --leaf-lt:#DDE9CC;
   --serif:"Playfair Display",Georgia,"Times New Roman",serif;
   --sans:"Nunito","Segoe UI",system-ui,-apple-system,sans-serif;
   color-scheme:light;
-  box-sizing:border-box;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html,body{height:100%;background:var(--bg);color:var(--txt);font-family:var(--sans);scroll-behavior:smooth}
-body{background:radial-gradient(900px 500px at 90% -10%,rgba(168,200,130,.35),transparent),radial-gradient(700px 420px at -5% 110%,rgba(221,233,204,.7),transparent),var(--bg);display:flex;flex-direction:column;min-height:100vh}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{background:var(--bg);color:var(--txt);font-family:var(--sans);line-height:1.65;padding-bottom:env(safe-area-inset-bottom,0)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--leaf);outline-offset:3px;border-radius:6px}
 
-header{position:fixed;top:0;left:0;right:0;z-index:10;display:flex;align-items:center;justify-content:space-between;padding:16px clamp(16px,4vw,48px);font-size:.85rem;color:var(--mut);background:rgba(250,246,236,0.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 clamp(18px,5vw,40px)}
+section{padding:clamp(44px,7vw,80px) 0}
+.alt{background:var(--bg2)}
 
-.brand{display:flex;align-items:center;text-decoration:none}
-.brand b{font-family:var(--serif);color:var(--leaf);letter-spacing:.08em;font-size:1.1rem}
+h1,h2,h3{font-family:var(--serif);color:var(--leaf-dk);line-height:1.2}
+h1{font-size:clamp(2.1rem,6vw,3.5rem);max-width:15ch}
+h2{font-size:clamp(1.55rem,3.6vw,2.3rem);margin-bottom:14px;max-width:24ch}
+h3{font-size:1.15rem;margin-bottom:6px}
+.lead{font-size:clamp(1rem,2vw,1.15rem);color:var(--mut);max-width:60ch}
+p{max-width:65ch}
 
-.nav{display:flex;gap:20px;align-items:center}
-.nav a{color:var(--mut);text-decoration:none;font-weight:600;transition:.2s}
-.nav a:hover{color:var(--leaf)}
+header{position:sticky;top:0;z-index:20;background:rgba(250,246,236,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--serif);font-weight:700;letter-spacing:.06em;color:var(--leaf-dk)}
+.brand svg{width:30px;height:30px}
+nav{display:flex;gap:22px;align-items:center;font-weight:600;font-size:.92rem}
+nav a{text-decoration:none;color:var(--mut)}
+nav a:hover{color:var(--leaf)}
+@media(max-width:820px){nav a:not(.btn){display:none}}
 
-main{flex:1;padding-top:80px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--leaf-dk);color:#fff;border-radius:999px;padding:14px 26px;font:700 1rem var(--sans);text-decoration:none;border:2px solid var(--leaf-dk);transition:background .2s}
+.btn:hover{background:var(--leaf);border-color:var(--leaf)}
+.btn.sm{padding:9px 18px;font-size:.88rem}
+.btn.ghost{background:transparent;color:var(--leaf-dk)}
+.btn.ghost:hover{background:var(--leaf-lt);border-color:var(--leaf-dk)}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
 
-section{padding:70px clamp(18px,6vw,90px);display:flex;flex-direction:column;justify-content:center;min-height:calc(100vh - 80px);position:relative;border-bottom:1px solid rgba(220,213,191,0.4)}
-.wrap{max-width:1100px;width:100%;margin:auto}
+.hero{padding:clamp(48px,9vw,110px) 0 clamp(40px,6vw,70px);background:radial-gradient(700px 380px at 95% 0,rgba(168,200,130,.35),transparent),var(--bg)}
+.hero .lead{margin-top:18px}
+.hours{margin-top:16px;font-size:.92rem;color:var(--mut)}
 
-.num{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;font-weight:700;letter-spacing:.1em;color:var(--leaf);margin-bottom:14px}
-.num span{background:var(--leaf-lt);border:1px solid rgba(79,122,63,.5);border-radius:999px;padding:3px 11px}
+.trust{border-block:1px solid var(--line);background:var(--card)}
+.trust ul{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px 28px;padding:22px 0}
+.trust li{display:flex;gap:10px;font-weight:600;font-size:.95rem}
+.trust svg{flex:none;width:20px;height:20px;margin-top:3px;stroke:var(--leaf);fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
 
-h1{font-family:var(--serif);font-size:clamp(2.2rem,5vw,3.6rem);line-height:1.15;font-weight:700;letter-spacing:-.01em;color:var(--leaf-dk)}
-h2{font-family:var(--serif);font-size:clamp(1.8rem,3.6vw,2.5rem);line-height:1.2;font-weight:700;margin-bottom:22px;color:var(--leaf-dk)}
-.g{color:var(--leaf);font-style:italic}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin-top:28px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px}
+.card p{color:var(--mut);font-size:.96rem}
+.card a.link{display:inline-block;margin-top:12px;font-weight:700;color:var(--leaf);text-decoration:underline;text-underline-offset:3px}
 
-.sub{font-size:clamp(1rem,1.8vw,1.2rem);color:var(--mut);margin-top:18px;max-width:750px;line-height:1.65}
-.tag{display:inline-block;margin-top:20px;border:1px solid var(--line);background:var(--card);border-radius:999px;padding:8px 18px;font-size:.88rem;color:var(--leaf);font-weight:600}
+.steps{list-style:none;display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:28px;counter-reset:s}
+.steps li{counter-increment:s;padding-left:54px;position:relative}
+.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:38px;height:38px;border-radius:50%;background:var(--leaf-lt);border:1px solid var(--leaf);display:grid;place-items:center;font:700 1.05rem var(--serif);color:var(--leaf-dk)}
+.steps p{color:var(--mut);font-size:.96rem}
 
-.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));margin-top:20px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px;transition:.25s;box-shadow:0 6px 18px rgba(47,74,43,.06)}
-.card:hover{border-color:var(--leaf);transform:translateY(-3px)}
-.card h3{font-family:var(--serif);font-size:1.25rem;margin:14px 0 8px;color:var(--leaf-dk)}
-.card p{color:var(--mut);font-size:.95rem;line-height:1.65}
+.method{display:grid;gap:28px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));align-items:start}
+.method ul{list-style:none;display:grid;gap:12px;margin-top:6px}
+.method li{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px;color:var(--mut);font-size:.96rem}
+.method li b{color:var(--leaf-dk)}
 
-.ic{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--leaf-lt);border:1px solid rgba(79,122,63,.35)}
-.ic svg{width:24px;height:24px;stroke:var(--leaf);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.faq{margin-top:22px;display:grid;gap:10px;max-width:760px}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:0 20px}
+summary{cursor:pointer;padding:16px 0;font-weight:700;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:1.3rem;line-height:1;color:var(--leaf)}
+details[open] summary::after{content:"–"}
+details p{padding-bottom:16px;color:var(--mut);font-size:.96rem}
 
-/* Botões com alto contraste */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--leaf);color:#ffffff !important;border:0;border-radius:999px;padding:14px 28px;font:inherit;font-size:1rem;font-weight:700;cursor:pointer;text-decoration:none;transition:.2s;box-shadow:0 4px 14px rgba(79,122,63,.3)}
-.btn:hover{background:var(--leaf-dk);transform:translateY(-2px);color:#ffffff !important}
-.btn-sec{background:var(--card);color:var(--leaf-dk) !important;border:1px solid var(--line);box-shadow:none}
-.btn-sec:hover{border-color:var(--leaf);color:var(--leaf) !important;background:var(--leaf-lt)}
+.final{background:var(--leaf-dk);color:#FFFDF7;text-align:center}
+.final h2{color:#FFFDF7;margin-inline:auto}
+.final p{color:#E4ECD6;margin:0 auto}
+.final .btn{background:#FFFDF7;color:var(--leaf-dk);border-color:#FFFDF7;margin-top:26px}
+.final .btn:hover{background:var(--leaf-lt);border-color:var(--leaf-lt)}
 
-.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px}
+.ach{padding:34px 0;border-top:1px solid var(--line)}
+.ach .in{display:flex;gap:20px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.ach h3{font-size:1.05rem}
+.ach p{font-size:.9rem;color:var(--mut)}
+.disc{font-size:.8rem;color:var(--mut);margin-top:12px;max-width:80ch}
 
-.note{margin-top:22px;border:1px solid rgba(79,122,63,.35);border-left:5px solid var(--leaf);background:var(--leaf-lt);border-radius:14px;padding:16px 20px;font-size:.95rem;line-height:1.65;color:var(--leaf-dk)}
+footer{background:var(--bg2);border-top:1px solid var(--line);padding:28px 0 calc(28px + 64px);font-size:.88rem;color:var(--mut)}
+footer .wrap{display:grid;gap:6px}
+footer a{color:var(--leaf-dk);font-weight:600}
 
-/* Seção de Achadinhos / Afiliados */
-.achadinhos-box{background:var(--leaf-dk);color:#FFFDF7;border-radius:24px;padding:40px;display:flex;flex-direction:column;gap:20px;position:relative;overflow:hidden;box-shadow:0 12px 30px rgba(47,74,43,.15)}
-.achadinhos-box h2{color:#FFFDF7}
-.achadinhos-box p{color:var(--bg2);max-width:600px;line-height:1.7}
-
-footer{padding:30px clamp(18px,6vw,90px);background:var(--bg2);border-top:1px solid var(--line);font-size:.85rem;color:var(--mut);text-align:center;display:flex;flex-direction:column;gap:8px}
-
-.leaf{position:fixed;z-index:0;pointer-events:none;color:var(--leaf)}
-.leaf svg{width:100%;height:100%;display:block}
-.leaf.tr{top:0;right:0;width:clamp(150px,22vw,300px);aspect-ratio:1;opacity:.12}
-.leaf.bl{bottom:0;left:0;width:clamp(130px,18vw,250px);aspect-ratio:1;opacity:.1;transform:scale(-1,-1)}
-
-@media(max-width:768px){.nav{display:none}}
+.fab{position:fixed;right:max(16px,env(safe-area-inset-right));bottom:max(16px,env(safe-area-inset-bottom));z-index:30;background:#1FA855;color:#fff;border-radius:999px;padding:14px 20px;font-weight:700;text-decoration:none;display:flex;gap:8px;align-items:center;box-shadow:0 6px 18px rgba(0,0,0,.22)}
+.fab svg{width:22px;height:22px;fill:#fff}
+@media(min-width:821px){footer{padding-bottom:28px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 </style>
 </head>
 <body>
 
-<!-- Ramos Decorativos -->
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <symbol id="ramo" viewBox="0 0 200 200">
-    <g fill="currentColor">
-      <path d="M200 0 C150 30 110 70 70 130" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-      <path d="M168 24 C150 4 122 8 108 28 C130 44 156 42 168 24Z"/>
-      <path d="M150 52 C128 40 104 50 96 72 C120 82 142 74 150 52Z"/>
-      <path d="M128 76 C104 70 82 84 80 108 C104 112 124 100 128 76Z"/>
-      <path d="M188 52 C196 76 182 100 160 106 C152 82 166 60 188 52Z"/>
-      <path d="M160 92 C170 114 158 138 136 144 C126 122 138 100 160 92Z"/>
-      <path d="M104 106 C94 126 98 148 116 160 C132 144 124 118 104 106Z"/>
-      <path d="M78 130 C60 142 54 164 66 182 C86 174 92 150 78 130Z"/>
-    </g>
-  </symbol>
-</svg>
-
-<div class="leaf tr" aria-hidden="true"><svg><use href="#ramo"/></svg></div>
-<div class="leaf bl" aria-hidden="true"><svg><use href="#ramo"/></svg></div>
-
 <header>
-  <a href="#" class="brand">
-    <b>BELA CLEAN HOUSE</b>
-  </a>
-  <nav class="nav">
-    <a href="#proposito">O Propósito</a>
-    <a href="#servicos">Nossos Serviços</a>
-    <a href="#diferenciais">Diferenciais</a>
-    <a href="#achadinhos">Achadinhos VIP</a>
-    <a href="https://wa.me/5567992421003?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20com%20a%20Bela%20Clean." target="_blank" class="btn" style="padding: 8px 18px; font-size: 0.85rem;">Falar no WhatsApp</a>
-  </nav>
+  <div class="wrap bar">
+    <a href="#inicio" class="brand" aria-label="Bela Clean House – início">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#2F4A2B"/><path d="M14 50C16 28 30 14 50 14 50 34 36 48 14 50Z" fill="#DDE9CC"/></svg>
+      BELA CLEAN HOUSE
+    </a>
+    <nav aria-label="Principal">
+      <a href="#servicos">Serviços</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#metodo">Nosso método</a>
+      <a href="#duvidas">Dúvidas</a>
+      <a class="btn sm" data-cta="header" target="_blank" rel="noopener" href="https://wa.me/5567992421003?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20um%20or%C3%A7amento%20com%20a%20Bela%20Clean%20House.">Pedir orçamento</a>
+    </nav>
+  </div>
 </header>
 
-<main>
-  <!-- HERO SECTION -->
-  <section>
+<main id="inicio">
+
+  <section class="hero">
     <div class="wrap">
-      <div class="num"><span>01</span> LIMPEZA PROFISSIONAL &amp; CUIDADO</div>
-      <h1>Sua casa limpa.<br>Seu tempo de <span class="g">volta.</span></h1>
-      <p class="sub">Conte com a Bela Clean House para cuidar do seu espaço. Mais tempo livre para você aproveitar o que realmente importa, com a tranquilidade de um ambiente impecável.</p>
-      
+      <h1>Sua casa em ordem. Seu tempo de volta.</h1>
+      <p class="lead">Cuidamos do seu lar ou da sua empresa com profissionais de confiança, discrição e um padrão que se repete a cada visita. Você chega e encontra tudo no lugar.</p>
       <div class="actions">
-        <a href="https://wa.me/5567992421003?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20de%20limpeza." target="_blank" class="btn">
-          Agendar pelo WhatsApp (67) 99242-1003
-        </a>
-        <a href="#proposito" class="btn btn-sec">
-          Conhecer a nossa essência
-        </a>
+        <a class="btn" data-cta="hero" target="_blank" rel="noopener" href="https://wa.me/5567992421003?text=Ol%C3%A1!%20Vi%20o%20site%20da%20Bela%20Clean%20House%20e%20gostaria%20de%20pedir%20um%20or%C3%A7amento%20de%20limpeza.">Pedir orçamento no WhatsApp</a>
+        <a class="btn ghost" href="#metodo">Conhecer nosso método</a>
       </div>
-      
-      <div class="tag">Cuidado, padrão e excelência para o seu espaço em Campo Grande – MS</div>
+      <p class="hours">Atendimento em toda Campo Grande – MS, de segunda a sexta, das 8h às 18h. Horários especiais para comércios sob combinação.</p>
     </div>
   </section>
 
-  <!-- O QUE NOS MOVE -->
-  <section id="proposito" style="background: rgba(241, 235, 218, 0.4);">
+  <div class="trust">
     <div class="wrap">
-      <div class="num"><span>02</span> NOSSA ESSÊNCIA</div>
-      <h2>O que nos move?</h2>
-      <p class="sub" style="margin-bottom: 30px;">
-        Acreditamos que um ambiente limpo e organizado transforma a rotina, traz paz de espírito e devolve o seu bem mais precioso: o seu tempo livre.
-      </p>
-      
-      <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
-        <div class="card">
-          <div class="ic"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
-          <h3>Cuidado Genuíno</h3>
-          <p>Cuidamos do seu lar ou empresa como se fosse nosso, com atenção minuciosa aos detalhes que fazem a diferença.</p>
-        </div>
-        <div class="card">
-          <div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
-          <h3>Liberdade e Paz</h3>
-          <p>Chegar em casa e encontrar tudo em ordem não tem preço. Deixe a parte pesada conosco e aproveite seu descanso.</p>
-        </div>
-      </div>
+      <ul>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Equipe selecionada e treinada</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Checklist conferido em cada ambiente</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Pontualidade, discrição e respeito ao seu espaço</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Orçamento sob medida, sem compromisso</li>
+      </ul>
     </div>
-  </section>
+  </div>
 
-  <!-- NOSSOS SERVIÇOS -->
   <section id="servicos">
     <div class="wrap">
-      <div class="num"><span>03</span> SERVIÇOS SOB MEDIDA</div>
-      <h2>Cuidados de cada detalhe para o seu espaço brilhar</h2>
-      <p class="sub" style="margin-bottom: 20px;">Trabalhamos com opções de planos avulsos ou recorrentes para atender perfeitamente à sua necessidade.</p>
-      
+      <h2>Serviços pensados para a sua rotina</h2>
+      <p class="lead">Escolha um atendimento avulso ou um plano recorrente. Em todos, alinhamos com você o que é prioridade antes de começar.</p>
       <div class="grid">
-        <div class="card">
-          <div class="ic"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
-          <h3>Limpeza Residencial &amp; Comercial</h3>
-          <p>Manutenção periódica, faxinas profundas e organização de rotina para residências e escritórios corporativos.</p>
-        </div>
-        <div class="card">
-          <div class="ic"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
-          <h3>Imóveis de Temporada</h3>
-          <p>Preparação ágil, higienização rigorosa e padrão impecável para check-ins de sucesso (Airbnb e Booking).</p>
-        </div>
-        <div class="card">
-          <div class="ic"><svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></div>
-          <h3>Limpeza e Organização de Pós-Mudança</h3>
-          <p>Deixamos o seu novo espaço pronto, limpo e acolhedor para você começar esta nova fase sem preocupações.</p>
-        </div>
+        <article class="card">
+          <h3>Limpeza residencial</h3>
+          <p>Faxina detalhada, higienização e organização de rotina para casas e apartamentos, com visitas avulsas ou semanais e quinzenais.</p>
+          <a class="link" data-cta="servico-residencial" target="_blank" rel="noopener" href="https://wa.me/5567992421003?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20de%20limpeza%20residencial.">Pedir orçamento</a>
+        </article>
+        <article class="card">
+          <h3>Limpeza comercial</h3>
+          <p>Escritórios, lojas e consultórios limpos para receber bem clientes e equipe, inclusive em horários fora do expediente, sob combinação.</p>
+          <a class="link" data-cta="servico-comercial" target="_blank" rel="noopener" href="https://wa.me/5567992421003?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20de%20limpeza%20comercial.">Pedir orçamento</a>
+        </article>
+        <article class="card">
+          <h3>Imóveis de temporada</h3>
+          <p>Limpeza ágil entre hóspedes, com padrão de hotelaria, para Airbnb e Booking. Tudo pronto para o próximo check-in.</p>
+          <a class="link" data-cta="servico-temporada" target="_blank" rel="noopener" href="https://wa.me/5567992421003?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20im%C3%B3vel%20de%20temporada.">Pedir orçamento</a>
+        </article>
+        <article class="card">
+          <h3>Mudança e pós-obra</h3>
+          <p>Limpeza e organização para o seu novo espaço ficar limpo e acolhedor desde o primeiro dia, ou para fechar uma reforma sem sujeira.</p>
+          <a class="link" data-cta="servico-mudanca" target="_blank" rel="noopener" href="https://wa.me/5567992421003?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20de%20limpeza%20de%20mudan%C3%A7a%20ou%20p%C3%B3s-obra.">Pedir orçamento</a>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- DIFERENCIAIS -->
-  <section id="diferenciais" style="background: rgba(241, 235, 218, 0.4);">
+  <section id="como-funciona" class="alt">
     <div class="wrap">
-      <div class="num"><span>04</span> POR QUE NOS ESCOLHER</div>
-      <h2>Profissionais de total confiança para a sua rotina</h2>
-      
-      <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));">
-        <div class="card">
-          <h3>Atendimento Personalizado</h3>
-          <p>Alinhamos o foco da limpeza de acordo com as prioridades do seu dia a dia.</p>
-        </div>
-        <div class="card">
-          <h3>Equipe Verificada</h3>
-          <p>Profissionais rigorosamente selecionados e capacitados para total segurança.</p>
-        </div>
-        <div class="card">
-          <h3>Planos Flexíveis</h3>
-          <p>Atendimentos avulsos sob demanda ou pacotes recorrentes semanais/quinzenais.</p>
-        </div>
+      <h2>Como funciona</h2>
+      <ol class="steps">
+        <li><h3>Você nos chama</h3><p>Conte pelo WhatsApp o tipo de imóvel e o que você precisa. A conversa é simples e sem compromisso.</p></li>
+        <li><h3>Montamos o orçamento</h3><p>Cada casa é única. Combinamos prioridades, tamanho e frequência e enviamos uma proposta sob medida.</p></li>
+        <li><h3>Cuidamos do resto</h3><p>Nossa equipe chega no horário combinado, segue o checklist e entrega o espaço pronto.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="metodo">
+    <div class="wrap method">
+      <div>
+        <h2>Um método para o padrão não depender da sorte</h2>
+        <p class="lead">Quem cuida da sua casa merece instruções claras, e você merece o mesmo resultado em toda visita. Por isso trabalhamos com processo e com respeito, tanto por quem contrata quanto por quem executa.</p>
+      </div>
+      <ul>
+        <li><b>Checklist por ambiente.</b> O serviço só é finalizado depois de preenchido e conferido.</li>
+        <li><b>Microfibras por cor.</b> Cada cor tem uma função (vidros, superfícies, áreas sanitárias) para evitar contaminação cruzada.</li>
+        <li><b>Apresentação e conduta.</b> Uniforme com a marca, pontualidade, discrição e respeito à privacidade da sua casa.</li>
+        <li><b>Equipe valorizada.</b> Profissionais bem tratadas e bem treinadas cuidam melhor do que é seu.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="atendimento" class="alt">
+    <div class="wrap">
+      <h2>Atendemos toda Campo Grande</h2>
+      <p class="lead">Sem restrição de bairro. Temos grande experiência com condomínios fechados e regiões nobres, e também atendemos casas, apartamentos, escritórios e imóveis de temporada em toda a cidade.</p>
+      <p class="lead" style="margin-top:12px">Funcionamos de segunda a sexta, das 8h às 18h. Precisa de outro horário para o seu comércio? Fale com a gente e adaptamos o atendimento.</p>
+    </div>
+  </section>
+
+  <section id="duvidas">
+    <div class="wrap">
+      <h2>Dúvidas frequentes</h2>
+      <div class="faq">
+        <details><summary>Como funciona o orçamento?</summary><p>Você nos conta o tipo e o tamanho do imóvel e o que precisa. Com isso montamos uma proposta sob medida, sem compromisso, pelo WhatsApp.</p></details>
+        <details><summary>Quem vai até a minha casa?</summary><p>Uma equipe selecionada e treinada no nosso método, com uniforme da marca e checklist de cada ambiente.</p></details>
+        <details><summary>Vocês levam os produtos e equipamentos?</summary><p>Sim, podemos levar produtos e materiais profissionais. Combinamos esse detalhe no orçamento.</p></details>
+        <details><summary>Posso contratar uma vez só ou de forma recorrente?</summary><p>Os dois. Atendemos visitas avulsas e planos semanais ou quinzenais, conforme a sua rotina.</p></details>
+        <details><summary>Vocês atendem fora do horário comercial?</summary><p>Nosso funcionamento é de segunda a sexta, das 8h às 18h. Para comércios que precisam de outro horário, conversamos e adaptamos.</p></details>
       </div>
     </div>
   </section>
 
-  <!-- GRUPO DE ACHADINHOS (AFILIADOS SHOPEE / AMAZON) -->
-  <section id="achadinhos">
+  <section class="final">
     <div class="wrap">
-      <div class="num"><span>05</span> COMUNIDADE E UTILIDADES</div>
-      
-      <div class="achadinhos-box">
-        <span class="tag" style="align-self: flex-start; background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.2); color: #FFFDF7;">Canal de Ofertas Ativo</span>
-        <h2>Grupo de Achadinhos &amp; Dicas para o Lar</h2>
-        <p>
-          Participe do nosso grupo exclusivo no WhatsApp e receba em primeira mão indicações de produtos de limpeza, organização e utilidades domésticas com os melhores preços na Shopee e na Amazon.
-        </p>
+      <h2>Vamos cuidar do seu espaço?</h2>
+      <p>Conte o que você precisa e receba um orçamento pensado para a sua casa ou empresa.</p>
+      <a class="btn" data-cta="final" target="_blank" rel="noopener" href="https://wa.me/5567992421003?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20conversa%20e%20pedir%20um%20or%C3%A7amento.">Falar no WhatsApp (67) 99242-1003</a>
+    </div>
+  </section>
+
+  <aside class="ach" id="achadinhos">
+    <div class="wrap">
+      <div class="in">
         <div>
-          <a href="https://chat.whatsapp.com/FeK8JBfJ8dVGGMJvyzBQbN" target="_blank" class="btn" style="background: #22c55e; color: #fff !important;">
-            Entrar no Grupo VIP de Achadinhos
-          </a>
+          <h3>Achadinhos para o lar</h3>
+          <p>Indicações de produtos de limpeza, organização e utilidades na Shopee e na Amazon, no nosso grupo de WhatsApp.</p>
         </div>
+        <a class="btn ghost sm" data-cta="achadinhos" target="_blank" rel="noopener sponsored" href="https://chat.whatsapp.com/FeK8JBfJ8dVGGMJvyzBQbN">Entrar no grupo</a>
       </div>
-
-      <div class="note" style="margin-top: 20px;">
-        <small style="display:block; font-weight:700; letter-spacing:0.05em; margin-bottom:4px;">TRANSPARÊNCIA E AFILIADOS</small>
-        Este site e o nosso grupo de WhatsApp funcionam como canais oficiais de indicação de produtos. Ao realizar compras através dos nossos links parceiros da Amazon e Shopee, você apoia o nosso trabalho sem nenhum custo adicional.
-      </div>
+      <p class="disc">Transparência: este site e o grupo indicam produtos por links de afiliado. Ao comprar pelos nossos links da Amazon e da Shopee, você apoia o nosso trabalho sem pagar nada a mais.</p>
     </div>
-  </section>
+  </aside>
 </main>
 
 <footer>
   <div class="wrap">
-    <p><b>Bela Clean House</b> · Campo Grande – MS · WhatsApp: (67) 99242-1003</p>
-    <p>© 2026 Todos os direitos reservados. Limpeza que transforma o seu dia.</p>
-    <p style="font-size: 0.78rem; opacity: 0.8;">Participante dos Programas de Associados da Amazon.com.br e de Afiliados da Shopee Brasil.</p>
+    <p><b>Bela Clean House</b> · Campo Grande – MS</p>
+    <p>WhatsApp <a href="https://wa.me/5567992421003" target="_blank" rel="noopener">(67) 99242-1003</a> · <a href="mailto:belacleanhouse@gmail.com">belacleanhouse@gmail.com</a> · <a href="https://www.instagram.com/belacleanhouse" target="_blank" rel="noopener">@belacleanhouse</a></p>
+    <p>Segunda a sexta, das 8h às 18h.</p>
+    <p>Participante dos Programas de Associados da Amazon.com.br e de Afiliados da Shopee Brasil.</p>
+    <p>© 2026 Bela Clean House. Todos os direitos reservados.</p>
   </div>
 </footer>
 
+<a class="fab" data-cta="flutuante" target="_blank" rel="noopener" href="https://wa.me/5567992421003?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20um%20or%C3%A7amento%20com%20a%20Bela%20Clean%20House." aria-label="Chamar no WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9l-5 4v-4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z"/></svg>
+  WhatsApp
+</a>
+
+<script>
+// Medição leve: registra cliques nos botões de WhatsApp se houver Vercel Analytics ou Google Analytics instalado.
+document.addEventListener('click',function(e){
+  var a=e.target.closest('[data-cta]');
+  if(!a)return;
+  var name=a.getAttribute('data-cta');
+  try{
+    if(window.va)window.va('event',{name:'whatsapp_click',data:{origem:name}});
+    if(window.gtag)window.gtag('event','whatsapp_click',{origem:name});
+  }catch(err){}
+});
+</script>
 </body>
 </html>
